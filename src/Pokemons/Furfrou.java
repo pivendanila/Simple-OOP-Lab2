@@ -1,0 +1,24 @@
+package Pokemons;
+import Attacks.PhysicalMove.WildCharge;
+import Attacks.StatusMove.DarkPulse;
+import Attacks.StatusMove.Growl;
+import Attacks.StatusMove.WorkUp;
+import ru.ifmo.se.pokemon.*;
+
+public class Furfrou extends Pokemon{
+    public Furfrou(String name, int level){
+        super(name, level);
+        this.setStats(75, 80, 60, 65, 90, 102);
+        this.setType(Type.NORMAL);
+        WorkUp workUp = new WorkUp();
+        this.addMove(workUp);
+        Growl growl = new Growl(100);
+        this.addMove(growl);
+        WildCharge wildCharge = new WildCharge(90, 100);
+        this.addMove(wildCharge);
+        DarkPulse darkPulse = new DarkPulse(80, 100);
+        this.addMove(darkPulse);
+
+
+    }
+}
