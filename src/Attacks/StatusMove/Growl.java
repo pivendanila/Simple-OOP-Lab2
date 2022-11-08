@@ -6,8 +6,8 @@ import ru.ifmo.se.pokemon.StatusMove;
 import ru.ifmo.se.pokemon.Type;
 
 public class Growl extends StatusMove{
-    public Growl(double accuracy){
-        super(Type.NORMAL, 0, accuracy);
+    public Growl(){
+        super(Type.NORMAL, 0, 100);
     }
 
 

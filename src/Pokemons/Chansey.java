@@ -8,7 +8,7 @@ public class Chansey extends Happiny{
 
         this.setStats(250 , 5, 5, 35, 105, 50);
         this.setType(Type.NORMAL);
-        MudBomb mudBomb = new MudBomb(65, 85);
+        MudBomb mudBomb = new MudBomb();
         this.addMove(mudBomb);
 
 

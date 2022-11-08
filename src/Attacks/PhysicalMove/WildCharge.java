@@ -3,13 +3,13 @@ package Attacks.PhysicalMove;
 import ru.ifmo.se.pokemon.*;
 
 public class WildCharge extends PhysicalMove {
-    public WildCharge(double power, double accuracy) {
-        super(Type.ELECTRIC, power, accuracy);
+    public WildCharge() {
+        super(Type.ELECTRIC, 90, 100);
     }
 
     @Override
-    protected void applySelfDamage(Pokemon att, double dmg){
-        att.setMod(Stat.HP, (int) (dmg * (1/4)));
+    protected void applySelfDamage(Pokemon att, double dmg) {
+        att.setMod(Stat.HP, (int) (dmg * (1 / 4)));
     }
 
     @Override

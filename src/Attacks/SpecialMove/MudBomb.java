@@ -3,13 +3,13 @@ package Attacks.SpecialMove;
 import ru.ifmo.se.pokemon.*;
 
 public class MudBomb extends SpecialMove {
-    public MudBomb(double power, double accuracy) {
-        super(Type.GROUND, power, accuracy);
+    public MudBomb() {
+        super(Type.GROUND, 65, 85);
     }
 
     @Override
     protected void applyOppEffects(Pokemon p) {
-        if (0.3 > Math.random()){
+        if (0.3 > Math.random()) {
             p.setMod(Stat.ACCURACY, -1);
         }
     }

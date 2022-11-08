@@ -3,12 +3,12 @@ package Attacks.StatusMove;
 import ru.ifmo.se.pokemon.*;
 
 public class ThunderWave extends StatusMove {
-    public ThunderWave(double accuracy) {
-        this.type = Type.NORMAL;
-        this.accuracy = accuracy;
+    public ThunderWave() {
+        super(Type.NORMAL, 0, 90);
     }
+
     @Override
-    protected void applyOppEffects(Pokemon p){
+    protected void applyOppEffects(Pokemon p) {
         Effect e = new Effect();
         e.condition(Status.PARALYZE);
         p.addEffect(e);

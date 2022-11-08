@@ -6,14 +6,13 @@ import ru.ifmo.se.pokemon.StatusMove;
 import ru.ifmo.se.pokemon.Type;
 
 public class DarkPulse extends StatusMove {
-    public DarkPulse(double power, double accuracy) {
-        super(Type.DARK, power, accuracy);
-
+    public DarkPulse() {
+        super(Type.DARK, 80, 100);
     }
 
     @Override
-    protected void applyOppEffects(Pokemon p){
-        if (0.2 > Math.random()){
+    protected void applyOppEffects(Pokemon p) {
+        if (0.2 > Math.random()) {
             Effect.flinch(p);
         }
 

@@ -8,7 +8,7 @@ public class Starmie extends Staryu{
 
         this.setStats(60, 75, 85, 100, 85, 115);
         this.setType(Type.WATER, Type.ELECTRIC);
-        DreamEater dreamEater = new DreamEater(100, 100);
+        DreamEater dreamEater = new DreamEater();
         this.addMove(dreamEater);
 
 

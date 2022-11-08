@@ -4,7 +4,7 @@ import ru.ifmo.se.pokemon.*;
 
 public class Refresh extends StatusMove {
     public Refresh() {
-        this.type = Type.NORMAL;
+        super(Type.NORMAL, 0, 0);
     }
 
     @Override

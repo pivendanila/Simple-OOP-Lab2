@@ -12,11 +12,11 @@ public class Furfrou extends Pokemon{
         this.setType(Type.NORMAL);
         WorkUp workUp = new WorkUp();
         this.addMove(workUp);
-        Growl growl = new Growl(100);
+        Growl growl = new Growl();
         this.addMove(growl);
-        WildCharge wildCharge = new WildCharge(90, 100);
+        WildCharge wildCharge = new WildCharge();
         this.addMove(wildCharge);
-        DarkPulse darkPulse = new DarkPulse(80, 100);
+        DarkPulse darkPulse = new DarkPulse();
         this.addMove(darkPulse);
 
 
