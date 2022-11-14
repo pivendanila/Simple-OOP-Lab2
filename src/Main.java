@@ -1,10 +1,10 @@
 import Pokemons.*;
-
+import ru.ifmo.se.pokemon.Battle;
 
 
 public class Main {
     public static void main(String[] args) {
-        ru.ifmo.se.pokemon.Battle PokemonBattle = new ru.ifmo.se.pokemon.Battle();
+        Battle PokemonBattle = new Battle();
 
         Furfrou furfrou = new Furfrou("Фурфрою", 1);
         Staryu staryu = new Staryu("Старью", 1);
