@@ -4,7 +4,7 @@ import Attacks.StatusMove.Confide;
 import Attacks.StatusMove.ThunderWave;
 import ru.ifmo.se.pokemon.*;
 
-public class Staryu extends Pokemon{
+public class Staryu extends ExtraPokemon{
     public Staryu(String name, int level){
         super(name, level);
         this.setStats(30, 45, 55, 70, 55, 85);

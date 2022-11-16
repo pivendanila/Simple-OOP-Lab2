@@ -5,7 +5,7 @@ import Attacks.StatusMove.Growl;
 import Attacks.StatusMove.WorkUp;
 import ru.ifmo.se.pokemon.*;
 
-public class Furfrou extends Pokemon{
+public class Furfrou extends ExtraPokemon{
     public Furfrou(String name, int level){
         super(name, level);
         this.setStats(75, 80, 60, 65, 90, 102);

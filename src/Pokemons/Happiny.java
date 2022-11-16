@@ -3,7 +3,7 @@ import Attacks.StatusMove.Refresh;
 import Attacks.StatusMove.WorkUp;
 import ru.ifmo.se.pokemon.*;
 
-public class Happiny extends Pokemon{
+public class Happiny extends ExtraPokemon{
     public Happiny(String name, int level){
         super(name, level);
 
